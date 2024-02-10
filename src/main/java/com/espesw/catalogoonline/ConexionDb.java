@@ -17,9 +17,9 @@ public class ConexionDb {
     public static Connection getConnection(){
         Connection conexion = null;
         try{
-            String urldb = "jdbc:mysql://localhost:3306/CatalogoOnline";
+            String urldb = "jdbc:mysql://localhost:3306/catalogoonline";
             String usuariodb = "root";
-            String passworddb = " Yes ";
+            String passworddb = "";
             
             conexion=DriverManager.getConnection(urldb, usuariodb,passworddb);
             
@@ -31,3 +31,4 @@ public class ConexionDb {
         return conexion;
     }
 }
+
